@@ -1,0 +1,22 @@
+ALGORITHM mmm
+VAR
+    c : CHAR;
+    cpChar,cpWord,cpVowels : INTEGER := 0;
+BEGIN
+     REPEAT
+        Write("Donnez un char");
+        Read(c);
+         cpChar := cpChar + 1;
+
+        IF (c = " ") THEN
+            cpWord := cpWord + 1
+        END_IF
+
+        IF (c = "a" OR c="A" OR c="e" OR c="E" OR c = "o" OR c="O" OR c="u" OR c="U" OR c="i" OR c="I") THEN
+            cpVowels = cpVowels+1
+        END_IF
+        UNTIL (c = ".") 
+    Write("Nbr de char",cpChar)
+         Write("Nbr de mots", cpWord+1)
+         Write("Nbr de vowels",cpVowels)
+END
